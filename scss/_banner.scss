@@ -1,0 +1,18 @@
+.banner{
+    height: auto;
+    border-radius: 1em;
+    padding: 2em;
+    background-color: $backgroundSecundario;
+    .banner__content--left{
+        height: 100%;
+        padding: 2em;
+        @include caja-flex( center, none, wrap, column);
+        text-align: right;
+        .autor{
+            color: $verdePrincipal;
+        }
+    }
+    .banner__content--right{
+        padding: 2em;
+    }
+}

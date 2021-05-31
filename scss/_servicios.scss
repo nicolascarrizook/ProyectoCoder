@@ -1,0 +1,83 @@
+/*Servicios*/
+.servicios {
+
+      margin-top: 2em;
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+
+        .card {
+            padding: 20px;
+            border-radius: 1em;
+        }
+
+        .container__cards {
+            margin-top: 3em;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .card--servicio {
+            box-shadow: none;
+            background-color: $backgroundSecundario;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .icono {
+            width: 3em;
+            height: 3em;
+            border-radius: 50%;
+            background-color: #f28c4c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+
+        .icono--2 {
+            background-color: #4e30b7;
+        }
+
+        .icono--3 {
+            background-color: #adc941;
+        }
+
+        .icono--4 {
+            background-color: #1176e8;
+        }
+
+        .icono--5 {
+            background-color: #e9cb52;
+        }
+
+        .icono--6 {
+            background-color: #3a58c5;
+        }
+
+        .card__text h5 {
+            color: white;
+            font-size: 1em;
+            font-weight: lighter;
+        }
+
+        .card__text h3 {
+            color: white;
+            font-weight: bold;
+        }
+
+        .card__text p {
+            color: $gris;
+        }
+
+
+        .card__text a:hover {
+            color: white;
+            transition: .2s all ease-in;
+        }
+    }
+}

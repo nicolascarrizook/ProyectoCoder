@@ -1,0 +1,39 @@
+//Sistema de grillas
+
+$cols: 12;
+$gap: 24px;
+
+.contenedor{
+    width: 100%;
+    margin: 0 auto; //Para que siempre este centrado
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+    max-width: 1240px;
+}
+
+.gs\:grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class*="col-"],
+.columna{
+    width: 100%;
+    max-width: 100%;
+    padding-left: $gap / 2;
+}
+
+@mixin grid-system($mq){
+    .#{$mq}{
+        flex: 1 0 0;
+    }
+    
+    @for $columna from 1 through $cols{
+        .#{$mq}-#{$columna}{
+            flex: 0 0 (100% / $cols) * $columna;
+            max-width: (100% / $cols) * $columna;
+        }
+    }
+}
+
+@include grid-system(columna);

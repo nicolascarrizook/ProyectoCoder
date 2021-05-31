@@ -1,0 +1,46 @@
+//Responsive
+
+@media screen and (min-width: 578px){
+    @include grid-system(sm\:columna);
+    .header__content{
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+
+    @include grid-system(md\:columna);
+
+    /*Configuracion body*/
+    body{
+        font-size: 12px;
+    }
+    /*header menu*/
+    .header__content{
+        height: auto;
+    }
+    
+    /*Configuracion banner*/
+    .banner__content--left{
+        text-align: center !important;
+    }
+    .banner__content--right{
+        margin-top: -2em;
+        text-align: center !important;
+    }
+
+    .recursos .recursos__inner .recurso__image {
+        margin-top: 2em;
+        width: 30px !important;
+    }
+ 
+    .footer{
+        text-align: center;
+        .right{
+            text-align: center !important;
+            padding-bottom: 1em;
+        }
+    }
+    
+}

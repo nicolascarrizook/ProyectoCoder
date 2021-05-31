@@ -3,10 +3,404 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Somos una agencia de diseño web y marketing digital, enfocados en apoyar a emprendedores o empresas que desean tener una presencia online.">   
+    <meta name="keywords" content="diseño web, marketing, marketing digital, agencia digital, comunicacion, multimedia, desarrollo web, desarrollo de aplicaciones, html, css, photoshop, react">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Be - Agencia digital</title>
 </head>
 <body>
-    
+    <header class="header contenedor">
+        <nav class="header__nav">
+            <div class="logo__nav">
+                <a href="">Be</a>
+            </div>
+            <ul class="navigation__nav">
+                <li class="navigation__element"><a href="#">Home</a></li>
+                <li class="dropdown navigation__element"><a href="#Servicios" class="dropdown-toggle" data-bs-toggle="dropdown" role="button">Servicios</a>
+                    <ul class="dropdown-menu">
+                        <li class="navigation__element"><a href="">HTML/CSS</a></li>
+                        <li class="navigation__element"><a href="">Wordpress</a></li>
+                        <li class="navigation__element"><a href="">ECommerce</a></li>
+                        <li class="navigation__element"><a href="">React js</a></li>
+                        <li class="navigation__element"><a href="">SEM</a></li>
+                        <li class="navigation__element"><a href="">Marketing</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__element"><a href="#Testimonios">Testimonios</a></li>
+                <li class="navigation__element"><a href="#Nosotros">Nosotros</a></li>
+                <li class="navigation__element"><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header__content">
+            <div class="inner__content">
+                <div class="content__subtitle">Hola, somos agencia Be</div>
+                <div class="content__textStatic">We are</div>
+                <ul class="content__textDynamic">
+                    <li><span>Creativos</span></li>
+                    <li><span>Innovadores</span></li>
+                    <li><span>Estrategas</span></li>
+                    <li><span>Be</span></li>
+                </ul>
+                <h5 class="content__parrafo"><strong>Listo para posicionar e impulsar tu negocio en la web?</strong></h5>
+                <h5 class="content__parrafo">Te brindamos asesoria personalizada para que tu marca se posicione en un mercado competitivo.</h5>
+                <button class="mt-4 button button--principal">Escribinos Ahora</button>
+            </div>
+            <div class="inner__content--right">
+                <img src="./assets/images/phone.png" alt="imagen-celular-ux" class="image__content">
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="m-4"></div>
+            <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_7udbsx97.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;" loop autoplay class="scroll-down"></lottie-player>
+            <ul class="social__group">
+                <li class="social__element"><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li class="social__element"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="social__element"><a href=""><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Banner-->
+    <div class="banner contenedor">
+        <div class="gs:grid">
+            <div class="sm:columna-6 md:columna-12">
+                <div class="banner__content--left">
+                    <h2 class="text-white">"La creatividad es la inteligencia divirtiendose".</h2>
+                    <span class="autor">Albert Einstein.</span>
+                </div>
+            </div>
+           <div class="sm:columna-6 md:columna-12">
+                <div class="banner__content--right">
+                    <p class="text-white ">Hacemos crecer tu negocio con ideas creativas, sólidos conocimientos, comunicación y tecnología. Tenemos una estructura organizacional flexible, dinámica y competitiva para movernos rápido, para ser más asertivos, para alcanzar mejores resultados en menor tiempo.
+                    <br> Somos un equipo innovador e inquieto y como parte de nuestros servicios ofrecemos una línea de soluciones de consultoría en Comunicación, Branding y Marketing Digital.</p>
+                </div>
+           </div>
+        </div>
+    </div>
+
+    <!--Servicios-->
+    <section id="servicios" class="servicios contenedor">
+        <div class="servicios__titulos">
+            <h2 class="titulo"><span></span> Let´s get to work!</h2>
+            <h2 class="subtitulo">Servicios digitales</h2>
+            <p class="parrafo">Brindamos un servicio completo que abarca desde el diseño y el desarrollo de proyectos que se ajustan a tus necesidades , sitios web, Marketing y contenidos audiovisuales, etc. </p>
+        </div>
+        <div class="container__cards grid">
+            <article class="card card--servicio">
+                <div class="icono">
+                    <span>01</span>
+                </div>
+                <div class="card__text">
+                    <h5>Diseño y desarrollo web</h5>
+                    <h3>HTML/CSS</h3>
+                    <p>Partimos del diseño hasta la programación de un sitio web totalmente personalizado. Contamos
+                        con la experiencia y capacidad necesaria para lograrlo.</p>
+                    <a href="./views/htmlcss.html"><span><i class="fas fa-chevron-right"></i></span> Ver más</a>
+                </div>
+            </article>
+            <article class="card card--servicio">
+                <div class="icono icono--2">
+                    <span>02</span>
+                </div>
+                <div class="card__text">
+                    <h5>Desarrollo Wordpress CMS</h5>
+                    <h3>Wordpress</h3>
+                    <p>Diseñamos y desarrollamos sitios web auto administrables, para que puedas ingresar contenido
+                        o editar sin la necesidad de tocar una linea de código. </p>
+                    <a href="#"><span><i class="fas fa-chevron-right"></i></span> Ver más</a>
+                </div>
+            </article>
+            <article class="card card--servicio">
+                <div class="icono icono--3">
+                    <span>03</span>
+                </div>
+                <div class="card__text">
+                    <h5>Tu tienda online</h5>
+                    <h3>E-Commerce</h3>
+                    <p>Creamos diseños atractivos y una interfaz amigable para aumentar tus ventas en la web. Tu
+                        tienda online 100% personalizada.</p>
+                    <a href="#"><span><i class="fas fa-chevron-right"></i></span> Ver más</a>
+                </div>
+            </article>
+            <article class="card card--servicio">
+                <div class="icono icono--4">
+                    <span>04</span>
+                </div>
+                <div class="card__text">
+                    <h5>Desarrollo de Apps</h5>
+                    <h3>React JS</h3>
+                    <p>Creamos Apps web y moviles para hacer tu vida mucho más fácil.</p>
+                    <a href="#"><span><i class="fas fa-chevron-right"></i></span> Ver más</a>
+                </div>
+            </article>
+            <article class="card card--servicio">
+                <div class="icono icono--5">
+                    <span>05</span>
+                </div>
+                <div class="card__text">
+                    <h5>Planificamos estrategias</h5>
+                    <h3>SEM: Publicidad digital</h3>
+                    <p>Creamos estrategias de marketing publicitario para posicionarte en los primeros
+                        resultados de Google, de esta manera atraer nuevos clientes a tu empresa.</p>
+                    <a href="#"><span><i class="fas fa-chevron-right"></i></span> Ver más</a>
+                </div>
+            </article>
+            <article class="card card--servicio">
+                <div class="icono icono--6">
+                    <span>06</span>
+                </div>
+                <div class="card__text">
+                    <h5>Potencia tus ventas</h5>
+                    <h3>Marketing & Contenido</h3>
+                    <p>Posicionamos tu marca, incrementamos tus ventas o fidelizamos a tus clientes. Nos preparamos
+                        para desarrollar estrategicas campañas que impulsaran a tu emprendimiento o negocio a lo mas
+                        alto.
+                    </p>
+                    <a href="#"><span><i class="fas fa-chevron-right"></i></span> Ver más</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!--Testimonial section-->
+    <section id="testimonial" class="testimonial contenedor">
+        <div class="testimonial__titulos">
+            <h2 class="titulo"><span></span> Clientes</h2>
+            <h2 class="subtitulo">Confían en nosotros</h2>
+            <p class="parrafo">Estos son nuestros principales activos que hemos logrado conservar y contentar con nuestro trabajo</p>
+        </div>
+        <div id="slider" class="owl-carousel">
+            <div class="slider__content">
+                <div class="inner__content">
+                    <div class="img-area"><img src="./assets/images/cliente-1.png" alt=""></div>
+                    <h2>Ramiro Trigo</h2>
+                    <p>natus cupiditate veniam officiis consequuntur laboriosam ex. Tempora laudantium pariatur, laboriosam ea aliquam magnam impedit?</p>
+                    <p class="socials">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-pinterest"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="slider__content">
+                <div class="inner__content">
+                    <div class="img-area"><img src="./assets/images/cliente-2.png" alt=""></div>
+                    <h2>Valentina Vidal</h2>
+                    <p>natus cupiditate veniam officiis consequuntur laboriosam ex. Tempora laudantium pariatur, laboriosam ea aliquam magnam impedit?</p>
+                    <p class="socials">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-pinterest"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="slider__content">
+                <div class="inner__content">
+                    <div class="img-area"><img src="./assets/images/cliente-2.png" alt=""></div>
+                    <h2>Valentina Vidal</h2>
+                    <p>natus cupiditate veniam officiis consequuntur laboriosam ex. Tempora laudantium pariatur, laboriosam ea aliquam magnam impedit?</p>
+                    <p class="socials">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-pinterest"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="slider__content">
+                <div class="inner__content">
+                    <div class="img-area"><img src="./assets/images/cliente-2.png" alt=""></div>
+                    <h2>Valentina Vidal</h2>
+                    <p>natus cupiditate veniam officiis consequuntur laboriosam ex. Tempora laudantium pariatur, laboriosam ea aliquam magnam impedit?</p>
+                    <p class="socials">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-pinterest"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Recursos digitales-->
+    <section class="recursos">
+        <div class="contenedor">
+            <div class="gs:grid">
+                <div class="sm:columna-6 md:columna-12">
+                    <div class="recursos__inner">
+                        <h2 class="titulo"><span></span> Recursos digitales</h2>
+                        <h2 class="subtitulo">Herramientas con las que trabajamos</h2>
+                        <p class="parrafo">Para brindarte un servicio completo, trabajamos con las ultimas tecnologias disponibles. De esta manera te aseguramos cumplir con tus propositos.</p>
+                    </div>
+                </div>
+                <div class="sm:columna-6 md:columna-12">
+                    <div class="recursos__inner recursos__inner--right">
+                        <div class="gs:grid">
+                            <div class="sm:columna-3 md:columna-3">
+                                <img src="./assets/images/react.svg" alt="" class="recurso__image" data-toggle="tooltip" data-placement="top" title="React">
+                            </div>
+                            <div class="sm:columna-3 md:columna-3">
+                                <img src="./assets/images/google-analytics-3.svg" alt="" class="recurso__image" data-toggle="tooltip" data-placement="top" title="Google Analytics">
+                            </div>
+                            <div class="sm:columna-3 md:columna-3">
+                                <img src="./assets/images/google-data-studio.svg" alt="" class="recurso__image"  data-toggle="tooltip" data-placement="top" title="Google Data Studio">
+                            </div>
+                            <div class="sm:columna-3 md:columna-3">
+                                <img src="./assets/images/icon-tool-slack-creativedog.svg" alt="" class="recurso__image" data-toggle="tooltip" data-placement="top" title="Slack">
+                            </div>
+                            <div class="sm:columna-3 md:columna-3">
+                                <img src="./assets/images/instagram-2016.svg" alt="" class="recurso__image" data-toggle="tooltip" data-placement="top" title="Instagram">
+                            </div>
+                            <div class="sm:columna-3 md:columna-3">
+                                <img src="./assets/images/mailchimp-freddie-icon-wink.svg" alt="" class="recurso__image" data-toggle="tooltip" data-placement="top" title="Mailchimp">
+                            </div>
+                            <div class="sm:columna-3 md:columna-3">
+                                <img src="./assets/images/sketch-2.svg" alt="" class="recurso__image" data-toggle="tooltip" data-placement="top" title="Sketch">
+                            </div>
+                            <div class="sm:columna-3 md:columna-3">
+                                <img src="./assets/images/wordpress-icon-1.svg" alt="" class="recurso__image" data-toggle="tooltip" data-placement="top" title="Wordpress">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contacto-->
+    <section id="contacto" class="contacto contenedor pt-4"> 
+        <div class="gs:grid">
+            <div class="sm:columna-4 md:columna-12 contenedor__left">
+                <div class="contacto__left">
+                    <div class="textos___left">
+                        <h2 class="titulo"><span></span> Hablemos</h2>
+                        <h2 class="subtitulo">¿Trabajamos juntos?</h2>
+                        <p class="parrafo">Contactate con nosotros para saber como podemos ayudarte a alcanzar tus objetivos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:columna-8 md:columna-12 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="formulario">
+                            <h2 class="titulo"><span></span> Formulario de contacto </h2>
+                            <div class="gs:grid ">
+                                <div class="sm:columna-6 md:columna-12 mt-2">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInputName" placeholder="Tu nombre">
+                                        <label for="floatingInputName" class="effect-1">Tu nombre</label>
+                                    </div>
+                                </div>
+                                <div class="sm:columna-6 md:columna-12 mt-2">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInputPhone" placeholder="Tu teléfono">
+                                        <label for="floatingInputPhone">Tu teléfono</label>
+                                    </div>
+                                </div>
+                                <div class="sm:columna-12 md:columna-12 mt-2">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInputEmail" placeholder="Tu email">
+                                        <label for="floatingInputEmail">Tu email</label>
+                                    </div>
+                                </div>
+                                <div class="sm:columna-12 md:columna-12 mt-2">
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" placeholder="Contanos de tu proyecto" id="floatingTextarea"></textarea>
+                                        <label for="floatingTextarea">Contanos de tu proyecto</label>
+                                      </div>
+                                </div>
+                                <div class="sm:columna-12 md:columna-12 mt-2">
+                                    <button class="mt-4 button button--principal">Enviar mensaje</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer id="footer" class="footer mt-4">
+        <div class="gs:grid footer__contenido contenedor">
+            <div class="sm:columna-3 md:columna-12">
+                <div class="footer__servicios">
+                    <h1 class="titulo titulo--footer">TE AYUDAMOS CON</h1>
+                    <ul>
+                        <li class="navigation__element navigation__element--footer"><a href="">Diseño y desarrollo web</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Desarrollo de Apps</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Tiendas online</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Marketing digital</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Posicionamiento online</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Contenidos multimedia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sm:columna-3 md:columna-12">
+                <div class="footer__servicios">
+                    <h1 class="titulo titulo--footer">CONOCENOS</h1>
+                    <ul>
+                        <li class="navigation__element navigation__element--footer"><a href="">Inicio</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Servicios</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Testimonios</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Casos de estudio</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Contacto</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Cotizar proyecto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sm:columna-3 md:columna-12">
+                <div class="footer__servicios">
+                    <h1 class="titulo titulo--footer">CONTACTO</h1>
+                    <ul>
+                        <li class="navigation__element navigation__element--footer"><a href=""><strong>Tucumán, Argentina</strong> </a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">+15 (3865) 441043</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">contacto@beagencia.com.ar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sm:columna-3 md:columna-12">
+                <div class="footer__servicios">
+                    <h1 class="titulo titulo--footer">REDES SOCIALES</h1>
+                    <ul class="footer__redes">
+                         <li class="social__element"><a href=""><i class="fab fa-twitter"></i> Twitter</a></li>
+                         <li class="social__element"><a href=""><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
+                         <li class="social__element"><a href=""><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="contenedor">
+                <div class="gs:grid content__footerBottom">
+                    <div class="sm:columna-6 md:columna-12">
+                        <span class="footer__derechos">Todos los derechos reservados a Be Agencia de diseño y contenido - 2020</span>
+                    </div>
+                    <div class="sm:columna-6 md:columna-12 right" >
+                        <button class="button button--principal">¡Suscribite al Newsletter!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+
+    <!--JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--CDN lotties-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!--CDN Carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

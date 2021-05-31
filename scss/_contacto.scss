@@ -1,0 +1,43 @@
+//Contacto
+
+.contacto{
+    margin-top: 2em;
+    .contenedor__left{
+        display: flex;
+        align-items: center;
+    }
+    .textos___left{
+        height: 100%;
+    }
+    .card{
+        background: $backgroundSecundario;
+        border-radius: 1em;
+        .formulario{
+            height: 100%;
+            padding: 2em;
+            .form-floating{
+                margin-right: 1em;
+            }
+            .form-control{
+                background: transparent; 
+                border: 0;   
+                outline: none;
+                border-bottom: 1px solid white;
+            }
+            label, textarea{
+                color: white;
+                font-size: .7em;
+            }
+            input{
+                color: white;
+                margin-top: .3em;
+            }
+            input[type] {
+                border-color: none;
+                box-shadow: none;
+            }
+        }
+    }
+
+    
+}

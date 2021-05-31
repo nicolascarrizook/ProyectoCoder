@@ -1,0 +1,41 @@
+//Footer
+
+.footer{
+    padding-top: 5em;
+    ul{
+        padding: 0;
+    }
+    .footer__contenido{
+        height: 100%;
+        @include caja-flex(space-around, none, wrap, row);
+        .titulo--footer{
+            color: white;
+        }
+        .navigation__element--footer{
+            font-size: .8em;
+            margin-top: .8em;
+            color: rgb(206, 203, 203);
+            font-weight: lighter;
+        }
+        a:hover {
+            color: white;
+            transition: all .8s ease;
+        }
+    }
+    .footer__bottom{
+        margin-top: 1em;
+        background: $verdeSecundario;
+    }
+    .content__footerBottom{
+        height: 20vh;
+        @include caja-flex(space-around, center, wrap, row);
+    }
+    .right{
+        text-align: right;
+    }
+    .footer__derechos{
+        font-size: .8em;
+        color: white;
+        font-weight: lighter;
+    }
+}

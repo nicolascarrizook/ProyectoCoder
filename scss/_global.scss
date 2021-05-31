@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import "variables.scss";
+
+//Globales
+
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    background-color: #12141D;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(134,132,132);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.button{
+    background-color: none;
+    border: none;
+    color: white;
+    position: relative;
+    padding: .5em 1em;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: .2em;
+    outline: none;
+    width: auto;
+}
+
+.button--principal{
+    @extend .button;
+    background: $verdePrincipal;
+    background: linear-gradient(135deg,#6bd5a9 0%,$verdePrincipal 100%);
+    border: none;
+}
+.button--principal:hover{
+    transform: translateY(-8px);
+    transition: all .5s ease;
+    background: linear-gradient(135deg,#366d56 0%,$verdePrincipal 100%);
+    box-shadow: $verdePrincipal;
+}
+
+//Utilidades
+
+@mixin caja-flex($principal, $cruzado, $wrap, $direccion){
+    display: flex;
+    justify-content: $principal;
+    align-items: $cruzado;
+    flex-wrap: $wrap;
+    flex-direction: $direccion;
+}
+
+.titulo{
+    font-size: 1.2rem !important;
+    color: $verdePrincipal;
+}
+
+.subtitulo{
+    font-size: 2rem !important;
+    color: white;
+}
+
+.parrafo{
+    font-size: 1rem !important;
+    color: $gris;
+}
+
+h2 span{
+    width: 30px;
+    height: 2px;
+    display: inline-block;
+    background: $verdePrincipal;
+    background: linear-gradient(135deg,#bfe4d5 0%,$verdePrincipal 100%);
+    vertical-align: middle;
+}
+
+a:focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus, input[type="file"]:focus,
+input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:focus {
+    outline-offset: 0;
+    outline: 0;
+}
