@@ -270,7 +270,7 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
     .header .header__nav .boton__nav .boton__navLines::before,
     .header .header__nav .boton__nav .boton__navLines::after {
       width: 1.5rem;
-      height: 1.5rem;
+      height: .1rem;
       background-color: #111111;
       transition: all 0.5s ease-in-out; }
     .header .header__nav .boton__nav .boton__navLines::before,
