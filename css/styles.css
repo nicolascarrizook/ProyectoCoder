@@ -228,7 +228,7 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
     max-width: 100%; }
   /*Configuracion body*/
   body {
-    font-size: 12px; }
+    font-size: 14px; }
   /*header menu*/
   .header__content {
     height: auto; }
