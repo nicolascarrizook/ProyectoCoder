@@ -22,6 +22,7 @@
     }
 
     .navigation__nav{
+        width: 100%;
         flex-direction: column !important;
         justify-content: space-around !important;
         position: absolute !important;
@@ -29,13 +30,13 @@
         right: 0;
         left: 0;
         height: 100vh;
-        transform: translateX(100vw);
+        transform: translateY(-100vh);
         background-color: $backgroundSecundario;
         z-index: 1;
     }
 
     .navigation__nav.open{
-        transform: translateX(0);
+        transform: translateY(0);
     }
 
     /*header menu*/

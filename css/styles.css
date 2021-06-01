@@ -236,6 +236,7 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
   .boton__nav {
     display: flex !important; }
   .navigation__nav {
+    width: 100%;
     flex-direction: column !important;
     justify-content: space-around !important;
     position: absolute !important;
@@ -243,11 +244,11 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
     right: 0;
     left: 0;
     height: 100vh;
-    transform: translateX(100vw);
+    transform: translateY(-100vh);
     background-color: #1E2029;
     z-index: 1; }
   .navigation__nav.open {
-    transform: translateX(0); }
+    transform: translateY(0); }
   /*header menu*/
   .header__content {
     height: auto; }
