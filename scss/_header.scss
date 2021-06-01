@@ -10,19 +10,20 @@
             }
         }
         .boton__nav{
+            cursor: pointer;
             position: relative;
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
             width: 1.5rem;
             height: 1.5rem;
-            z-index: 1;
+            z-index: 10 !important;
             .boton__navLines,
             .boton__navLines::before,
             .boton__navLines::after{
                 width: 1.5rem;
                 height: .1rem;
-                background-color: #111111;
+                background-color: white;
                 transition: all 0.5s ease-in-out;
             }
             .boton__navLines::before,
@@ -35,8 +36,21 @@
             }
             .boton__navLines::after{
                 transform: translateY(0.5rem);
-            }
+            } 
+          
+
         }
+          /*Animaciones*/
+            .boton__nav.open .boton__navLines{
+                transform: translateX(2rem);
+                background-color: transparent;
+            }
+            .boton__nav.open .boton__navLines::before{
+                transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+            }
+            .boton__nav.open .boton__navLines::after{
+                transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+            }
 
         .navigation__nav {
             height: 100%;
@@ -83,7 +97,7 @@
             height: 90px;
             line-height: 90px;
             overflow: hidden;
-
+            position:relative;
             li {
                 color: $verdePrincipal;
                 font-size: 3.5em;
@@ -129,6 +143,10 @@
             display: flex;
             justify-content: center;
         }
+    }
+
+    .button{
+        z-index: 0;
     }
 
     .header__bottom{

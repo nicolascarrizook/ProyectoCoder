@@ -16,6 +16,28 @@
     body{
         font-size: 14px;
     }
+    /*Menu*/
+    .boton__nav{
+        display:flex !important;
+    }
+
+    .navigation__nav{
+        flex-direction: column !important;
+        justify-content: space-around !important;
+        position: absolute !important;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        transform: translateX(100vw);
+        background-color: $backgroundSecundario;
+        z-index: 1;
+    }
+
+    .navigation__nav.open{
+        transform: translateX(0);
+    }
+
     /*header menu*/
     .header__content{
         height: auto;

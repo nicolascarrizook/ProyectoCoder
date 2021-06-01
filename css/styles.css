@@ -229,6 +229,22 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
   /*Configuracion body*/
   body {
     font-size: 14px; }
+  /*Menu*/
+  .boton__nav {
+    display: flex !important; }
+  .navigation__nav {
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(100vw);
+    background-color: #1E2029;
+    z-index: 1; }
+  .navigation__nav.open {
+    transform: translateX(0); }
   /*header menu*/
   .header__content {
     height: auto; }
@@ -253,25 +269,27 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row; }
+  flex-direction: row;
+  /*Animaciones*/ }
   .header .header__nav .logo__nav {
     font-size: 2em; }
     .header .header__nav .logo__nav a {
       color: white; }
   .header .header__nav .boton__nav {
+    cursor: pointer;
     position: relative;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 1.5rem;
     height: 1.5rem;
-    z-index: 1; }
+    z-index: 10 !important; }
     .header .header__nav .boton__nav .boton__navLines,
     .header .header__nav .boton__nav .boton__navLines::before,
     .header .header__nav .boton__nav .boton__navLines::after {
       width: 1.5rem;
       height: .1rem;
-      background-color: #111111;
+      background-color: white;
       transition: all 0.5s ease-in-out; }
     .header .header__nav .boton__nav .boton__navLines::before,
     .header .header__nav .boton__nav .boton__navLines::after {
@@ -281,6 +299,13 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
       transform: translateY(-0.5rem); }
     .header .header__nav .boton__nav .boton__navLines::after {
       transform: translateY(0.5rem); }
+  .header .header__nav .boton__nav.open .boton__navLines {
+    transform: translateX(2rem);
+    background-color: transparent; }
+  .header .header__nav .boton__nav.open .boton__navLines::before {
+    transform: rotate(45deg) translate(-1.5rem, 1.5rem); }
+  .header .header__nav .boton__nav.open .boton__navLines::after {
+    transform: rotate(-45deg) translate(-1.5rem, -1.5rem); }
   .header .header__nav .navigation__nav {
     height: 100%;
     margin: 0;
@@ -318,7 +343,8 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
     padding: 0;
     height: 90px;
     line-height: 90px;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative; }
     .header .header__content .content__textDynamic li {
       color: #3CCF91;
       font-size: 3.5em;
@@ -353,6 +379,9 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
   .header .header__content .inner__content--right {
     display: flex;
     justify-content: center; }
+
+.header .button, .header .button--principal {
+  z-index: 0; }
 
 .header .header__bottom {
   height: 100%;
