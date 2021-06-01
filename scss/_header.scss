@@ -3,13 +3,41 @@
     .header__nav {
         height: 5em;
         @include caja-flex(space-between, center, wrap, row);
-
         .logo__nav {
             font-size: 2em;
             a{
                 color: white;
             }
         }
+        .boton__nav{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1.5rem;
+            height: 1.5rem;
+            z-index: 1;
+            .boton__navLines,
+            .boton__navLines::before,
+            .boton__navLines::after{
+                width: 1.5rem;
+                height: 1.5rem;
+                background-color: #111111;
+                transition: all 0.5s ease-in-out;
+            }
+            .boton__navLines::before,
+            .boton__navLines::after{
+                content: "";
+                position: absolute;
+            }
+            .boton__navLines::before{
+                transform: translateY(-0.5rem);
+            }
+            .boton__navLines::after{
+                transform: translateY(0.5rem);
+            }
+        }
+
         .navigation__nav {
             height: 100%;
             margin: 0;

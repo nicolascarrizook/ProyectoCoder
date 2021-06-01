@@ -258,6 +258,29 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
     font-size: 2em; }
     .header .header__nav .logo__nav a {
       color: white; }
+  .header .header__nav .boton__nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    z-index: 1; }
+    .header .header__nav .boton__nav .boton__navLines,
+    .header .header__nav .boton__nav .boton__navLines::before,
+    .header .header__nav .boton__nav .boton__navLines::after {
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: #111111;
+      transition: all 0.5s ease-in-out; }
+    .header .header__nav .boton__nav .boton__navLines::before,
+    .header .header__nav .boton__nav .boton__navLines::after {
+      content: "";
+      position: absolute; }
+    .header .header__nav .boton__nav .boton__navLines::before {
+      transform: translateY(-0.5rem); }
+    .header .header__nav .boton__nav .boton__navLines::after {
+      transform: translateY(0.5rem); }
   .header .header__nav .navigation__nav {
     height: 100%;
     margin: 0;
