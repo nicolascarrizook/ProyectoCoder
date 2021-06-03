@@ -504,7 +504,7 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
   border-left: 5px solid #3CCF91; }
 
 .servicios__grupo {
-  gap: 3em;
+  gap: 2em;
   width: 100%;
   height: 100%;
   display: flex;
@@ -532,6 +532,32 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
   border-radius: 1em;
   transition: all .5s ease-in-out;
   cursor: pointer; }
+
+.inner__servicio--how {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row; }
+  .inner__servicio--how .servicio__icono {
+    margin-right: 3em; }
+
+.answers p {
+  color: #d8d8da; }
+
+.answers .accordion-item {
+  background: transparent;
+  color: #8c8c8c; }
+
+.answers .accordion-button {
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid #d8d8da;
+  font-size: 1rem; }
+
+.answers .accordion-button:focus {
+  box-shadow: none;
+  border-color: #d8d8da; }
 
 @media screen and (min-width: 578px) {
   .sm\:columna {
