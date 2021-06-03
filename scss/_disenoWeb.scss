@@ -18,7 +18,8 @@
 }
 
 .inner__servicio{
-    margin-top: 4em;
+    display: block;
+    padding: 2em;
     img{
         width: 40px;
         margin-bottom: 1em;
@@ -27,4 +28,10 @@
     p{
         color: $gris;
     }
+}
+.inner__servicio:hover{
+    background-color: $backgroundSecundario;
+    border-radius: 1em;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
 }

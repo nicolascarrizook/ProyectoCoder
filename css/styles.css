@@ -514,7 +514,8 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
   flex-direction: row; }
 
 .inner__servicio {
-  margin-top: 4em;
+  display: block;
+  padding: 2em;
   display: flex;
   justify-content: center;
   align-items: space-between;
@@ -525,6 +526,12 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
     margin-bottom: 1em; }
   .inner__servicio p {
     color: #d8d8da; }
+
+.inner__servicio:hover {
+  background-color: #1E2029;
+  border-radius: 1em;
+  transition: all .5s ease-in-out;
+  cursor: pointer; }
 
 @media screen and (min-width: 578px) {
   .sm\:columna {
