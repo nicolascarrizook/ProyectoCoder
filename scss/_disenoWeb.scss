@@ -55,11 +55,11 @@
     .accordion-button{
         background-color: transparent;
         color: white;
-        border-bottom: 1px solid $gris;
+        border-bottom: 1px solid rgb(92, 92, 92);
         font-size: 1rem;
     }
     .accordion-button:focus {
         box-shadow: none;
-        border-color: $gris;
+        border-color: rgb(92, 92, 92);
     }
 }

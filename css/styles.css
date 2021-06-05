@@ -552,12 +552,12 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
 .answers .accordion-button {
   background-color: transparent;
   color: white;
-  border-bottom: 1px solid #d8d8da;
+  border-bottom: 1px solid #5c5c5c;
   font-size: 1rem; }
 
 .answers .accordion-button:focus {
   box-shadow: none;
-  border-color: #d8d8da; }
+  border-color: #5c5c5c; }
 
 @media screen and (min-width: 578px) {
   .sm\:columna {
