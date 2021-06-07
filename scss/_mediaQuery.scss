@@ -14,8 +14,31 @@
 
     /*Configuracion body*/
     body{
-        font-size: 12px;
+        font-size: 14px;
     }
+    /*Menu*/
+    .boton__nav{
+        display:flex !important;
+    }
+
+    .navigation__nav{
+        width: 100%;
+        flex-direction: column !important;
+        justify-content: space-around !important;
+        position: absolute !important;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        transform: translateY(-100vh);
+        background-color: $backgroundSecundario;
+        z-index: 1;
+    }
+
+    .navigation__nav.open{
+        transform: translateY(0);
+    }
+
     /*header menu*/
     .header__content{
         height: auto;

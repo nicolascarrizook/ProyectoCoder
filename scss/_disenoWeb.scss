@@ -1,0 +1,65 @@
+/*Estilos diseno web*/
+.titulo__desarrollo{
+    text-align: center;
+    color: white;
+}
+.desarrollo__box{
+    background-color: $backgroundSecundario;
+    padding: 2em;
+    color: $gris;
+    border-left: 5px solid $verdePrincipal;
+}
+
+.servicios__grupo{
+    gap: 2em;
+    width: 100%;
+    height: 100%;
+    @include caja-flex(center, center, wrap, row);
+}
+
+.inner__servicio{
+    display: block;
+    padding: 2em;
+    img{
+        width: 40px;
+        margin-bottom: 1em;
+    }
+    @include caja-flex(center, space-between, wrap, column);
+    p{
+        color: $gris;
+    }
+}
+.inner__servicio:hover{
+    background-color: $backgroundSecundario;
+    border-radius: 1em;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.inner__servicio--how{
+    @include caja-flex(space-between, flex-start, nowrap, row);
+    .servicio__icono{
+        margin-right: 3em;
+    }
+    
+}
+
+.answers{
+    p{
+        color: $gris;
+    }
+    .accordion-item{
+        background: transparent;
+        color: rgb(140, 140, 140);
+    }
+    .accordion-button{
+        background-color: transparent;
+        color: white;
+        border-bottom: 1px solid rgb(92, 92, 92);
+        font-size: 1rem;
+    }
+    .accordion-button:focus {
+        box-shadow: none;
+        border-color: rgb(92, 92, 92);
+    }
+}

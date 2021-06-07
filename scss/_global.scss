@@ -6,6 +6,8 @@
 html{
     font-size: 16px;
     box-sizing: border-box;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 *, *::before, *::after{
@@ -18,7 +20,8 @@ body{
     line-height: 1.6;
     font-family: 'Poppins', sans-serif;
     background-color: #12141D;
-    overflow-x: hidden;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 ul{
