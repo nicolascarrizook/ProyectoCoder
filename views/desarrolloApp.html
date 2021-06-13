@@ -17,37 +17,40 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="../css/styles.css">
-    <title>BlackBox Desarrollo web</title>
+    <title>Black Brand - Desarrollo de Apps</title>
 </head>
 
 <body>
-    <header class="header contenedor">
-        <nav class="header__nav">
-            <div class="logo__nav">
-                <a href="/index.html">BlackBox</a>
-            </div>
-            <div class="boton__nav">
-                <div class="boton__navLines">
+    <header>
+        <nav class="navBar">
+            <div class="navBar__content contenedor">
+                <div class="logo"><a href="#">Black Brand</a></div>
+                <ul class="menu__list">
+                    <div class="icon cancel__boton">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li class="menu__item"><a href="/">Home</a></li>
+                    <li class="menu__item dropdown" ><a href="" class="dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="menu__item"><a  href="/views/disenoWeb.html">Desarrollo Web</a></li>
+                            <li class="menu__item"><a  href="/views/eCommerce.html">E-Commerce</a></li>
+                            <li class="menu__item"><a  href="/views/desarrolloApp.html">Desarrollo de Apps</a></li>
+                            <li class="menu__item"><a  href="/views/sem.html">SEM</a></li>
+                            <li class="menu__item"><a  href="/views/marketing.html">Marketing Digital</a></li>
+                          </ul>
+                    </li>
+                    <li class="menu__item"><a href="/views/404.html">Portfolio</a></li>
+                    <li class="menu__item"><a href="#testimonial">Testimonios</a></li>
+                    <li class="menu__item"><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="icon menu__boton">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
-            <ul class="navigation__nav">
-                <li class="navigation__element"><a href="/index.html">Home</a></li>
-                <li class="dropdown navigation__element"><a href="#Servicios" class="dropdown-toggle"
-                        data-bs-toggle="dropdown" role="button">Servicios</a>
-                    <ul class="dropdown-menu">
-                        <li class="navigation__element"><a href="/views/disenoWeb.html">HTML/CSS</a></li>
-                        <li class="navigation__element"><a href="/views/eCommerce.html">ECommerce</a></li>
-                        <li class="navigation__element"><a href="#">React js</a></li>
-                        <li class="navigation__element"><a href="/views/sem.html">SEM</a></li>
-                        <li class="navigation__element"><a href="/views/marketing.html">Marketing</a></li>
-                    </ul>
-                </li>
-                <li class="navigation__element"><a href="/">Testimonios</a></li>
-                <li class="navigation__element"><a href="/views/404.html">Nosotros</a></li>
-                <li class="navigation__element"><a href="/views/marketing.html">Contacto</a></li>
-            </ul>
         </nav>
-        <div class="header__content">
+    </header>
+    <section class="hero contenedor">
+        <div class="hero__content">
             <div class="inner__content">
                 <div class="content__textStatic" style="font-weight: 600;">Desarrollo de Apps</div>
                 </h5>
@@ -79,7 +82,7 @@
                     class="image__content">
             </div>
         </div>
-        <div class="header__bottom">
+        <div class="hero__bottom">
             <div class="m-4"></div>
             <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_7udbsx97.json"
                 background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay
@@ -89,21 +92,21 @@
                 <li class="social__element"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
                 <li class="social__element"><a href=""><i class="fab fa-instagram"></i></a></li>
             </ul>
-        </div>
-    </header>
+        </div>    
+    </section>
     <section class="desarrollo contenedor mt-4">
         <div class="titulo__desarrollo">
             <h2>Acerca del servicio</h2>
         </div>
         <div class="desarrollo__box mt-4 mb-4">
-            <p>Creamos Apps para móviles y Web Apps listas para tener tu producto digital en línea. Tanto para sistema operativo iOS (Apple / iPhone) o Android (Google), como así también desarrollo de Web Apps para computadoras de escritorio. Plataformas de contenido, mensajería, compras, reservas de turnos, entre otros. Todo integrado a sistemas de gestión de clientes. No importa el desafío, en BlackBox sabemos encarar un proyecto desde la idea inicial del cliente hasta la puesta en marcha.
+            <p>Creamos Apps para móviles y Web Apps listas para tener tu producto digital en línea. Tanto para sistema operativo iOS (Apple / iPhone) o Android (Google), como así también desarrollo de Web Apps para computadoras de escritorio. Plataformas de contenido, mensajería, compras, reservas de turnos, entre otros. Todo integrado a sistemas de gestión de clientes. No importa el desafío, en Black Brand sabemos encarar un proyecto desde la idea inicial del cliente hasta la puesta en marcha.
             </p>
         </div>
         <div class="titulo__desarrollo mt-4 mb-4">
             <h2>Plan de trabajo</h2>
         </div>
         <div class="gs:grid servicios__grupo">
-            <div class="sm:columna-3 md:columna-12 mt-4">
+            <div class="sm:columna-4 md:columna-12 mt-4">
                 <div class="inner__servicio">
                     <img src="/assets/images/icon-inmersion-01.svg" alt="">
                     <h2 class="titulo">Inmersión</h2>
@@ -111,7 +114,7 @@
                         entender las necesidades del cliente y los usuarios, alinear objetivos y expectativas.</p>
                 </div>
             </div>
-            <div class="sm:columna-3 md:columna-12">
+            <div class="sm:columna-4 md:columna-12">
                 <div class="inner__servicio">
                     <img src="/assets/images/icon-estrategia-dark-01.svg">
                         <h2 class=" titulo">Estrategia</h2>
@@ -121,7 +124,7 @@
             </div>
         </div>
         <div class="gs:grid servicios__grupo">
-            <div class="sm:columna-3 md:columna-12">
+            <div class="sm:columna-4 md:columna-12">
                 <div class="inner__servicio">
                     <img src="/assets/images/icon-implementacion-dark-01.svg" alt="">
                     <h2 class="titulo">Implementación</h2>
@@ -129,7 +132,7 @@
                         desarrollo, generación de contenido, nos preparamos para salir a la cancha.</p>
                 </div>
             </div>
-            <div class="sm:columna-3 md:columna-12">
+            <div class="sm:columna-4 md:columna-12">
                 <div class="inner__servicio">
                     <img src="/assets/images/icon-analisis-01.svg">
                         <h2 class=" titulo">Análisis</h2>
@@ -277,28 +280,23 @@
     </section>
 
     <!--Footer-->
-    <footer id="footer" class="footer mt-4">
+    <footer id="footer" class="footer">
         <div class="gs:grid footer__contenido contenedor">
             <div class="sm:columna-3 md:columna-12">
                 <div class="footer__servicios">
                     <h1 class="titulo titulo--footer">TE AYUDAMOS CON</h1>
                     <ul>
-                        <li class="navigation__element navigation__element--footer"><a href="">Diseño y desarrollo
-                                web</a></li>
-                        <li class="navigation__element navigation__element--footer"><a href="">Desarrollo de Apps</a>
-                        </li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Diseño y desarrollo web</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Desarrollo de Apps</a></li>
                         <li class="navigation__element navigation__element--footer"><a href="">Tiendas online</a></li>
-                        <li class="navigation__element navigation__element--footer"><a href="">Marketing digital</a>
-                        </li>
-                        <li class="navigation__element navigation__element--footer"><a href="">Posicionamiento
-                                online</a></li>
-                        <li class="navigation__element navigation__element--footer"><a href="">Contenidos multimedia</a>
-                        </li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Marketing digital</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Posicionamiento online</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Contenidos multimedia</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="sm:columna-3 md:columna-12">
-                <div class="footer__servicios">
+            <div class="sm:columna-3 md:columna-12" >
+                <div class="footer__servicios ">
                     <h1 class="titulo titulo--footer">CONOCENOS</h1>
                     <ul>
                         <li class="navigation__element navigation__element--footer"><a href="">Inicio</a></li>
@@ -314,12 +312,9 @@
                 <div class="footer__servicios">
                     <h1 class="titulo titulo--footer">CONTACTO</h1>
                     <ul>
-                        <li class="navigation__element navigation__element--footer"><a href=""><strong>Tucumán,
-                                    Argentina</strong> </a></li>
-                        <li class="navigation__element navigation__element--footer"><a href="">+15 (3865) 441043</a>
-                        </li>
-                        <li class="navigation__element navigation__element--footer"><a
-                                href="">contacto@beagencia.com.ar</a></li>
+                        <li class="navigation__element navigation__element--footer"><strong>Tucumán, Argentina</strong></li>
+                        <li class="navigation__element navigation__element--footer"><a href=""></a>+15 (3865) 441043</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">hola@blackbrand.agency</a></li>
                     </ul>
                 </div>
             </div>
@@ -327,21 +322,20 @@
                 <div class="footer__servicios">
                     <h1 class="titulo titulo--footer">REDES SOCIALES</h1>
                     <ul class="footer__redes">
-                        <li class="social__element"><a href=""><i class="fab fa-twitter"></i> Twitter</a></li>
-                        <li class="social__element"><a href=""><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
-                        <li class="social__element"><a href=""><i class="fab fa-instagram"></i> Instagram</a></li>
+                         <li class="social__element"><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                         <li class="social__element"><a href="#"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
+                         <li class="social__element"><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer__bottom">
             <div class="contenedor">
-                <div class="gs:grid content__footerBottom">
-                    <div class="sm:columna-6 md:columna-12">
-                        <span class="footer__derechos">Todos los derechos reservados a Be Agencia de diseño y contenido
-                            - 2020</span>
+                <div class="gs:grid content__footerBottom ">
+                    <div class="sm:columna-6 md:columna-12 footer__texto">
+                        <span class="footer__derechos">Todos los derechos reservados a Black Brand - 2020</span>
                     </div>
-                    <div class="sm:columna-6 md:columna-12 right">
+                    <div class="sm:columna-6 md:columna-12 footer__boton" >
                         <button class="button button--principal">¡Suscribite al Newsletter!</button>
                     </div>
                 </div>

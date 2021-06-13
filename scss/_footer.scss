@@ -28,7 +28,11 @@
     }
     .content__footerBottom{
         height: 20vh;
-        @include caja-flex(space-around, center, wrap, row);
+        width: 100%;
+        @include caja-flex(space-between, center, wrap, row);
+        .footer__boton{
+            text-align: center;
+        }
     }
     .right{
         text-align: right;

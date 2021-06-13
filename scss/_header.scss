@@ -1,176 +1,156 @@
-.header {
-    //Header menu & logo
-    .header__nav {
-        height: 5em;
-        @include caja-flex(space-between, center, wrap, row);
-        .logo__nav {
-            font-size: 2em;
-            a{
-                color: white;
+    /*Menu*/
+    .navBar{
+        position: fixed;
+        z-index: 5;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        padding: 25px 0;
+        transition: all 0.3s ease;
+        .navBar__content{
+            @include caja-flex(space-between, center, none, row);
+            .menu__list{
+                height: 100%;
+                margin-bottom: 0 !important; 
+                @include caja-flex(space-between, center, none, row);
+                .menu__item{
+                    font-size: 1em;
+                    margin: 1em;
+                    a:hover{
+                        color: $verdePrincipal;
+                        transition: all .5s ease;
+                    }
+                }
             }
         }
-        .boton__nav{
+        .icon{
+            color: #fff;
+            font-size: 20px;
             cursor: pointer;
-            position: relative;
             display: none;
+        }
+        .cancel__boton{
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+    }
+   
+
+    .hero {
+        //Hero content
+        .hero__content {
+            position: relative;
+            height: 90vh;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 2em;
             justify-content: center;
             align-items: center;
-            width: 1.5rem;
-            height: 1.5rem;
-            z-index: 10 !important;
-            .boton__navLines,
-            .boton__navLines::before,
-            .boton__navLines::after{
-                width: 1.5rem;
-                height: .1rem;
-                background-color: white;
-                transition: all 0.5s ease-in-out;
-            }
-            .boton__navLines::before,
-            .boton__navLines::after{
-                content: "";
-                position: absolute;
-            }
-            .boton__navLines::before{
-                transform: translateY(-0.5rem);
-            }
-            .boton__navLines::after{
-                transform: translateY(0.5rem);
-            } 
-          
 
-        }
-          /*Animaciones*/
-            .boton__nav.open .boton__navLines{
-                transform: translateX(2rem);
-                background-color: transparent;
-            }
-            .boton__nav.open .boton__navLines::before{
-                transform: rotate(45deg) translate(-1.5rem, 1.5rem);
-            }
-            .boton__nav.open .boton__navLines::after{
-                transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+            .content__subtitle {
+                color: white;
+                font-weight: lighter;
+                font-size: 1.4em;
             }
 
-        .navigation__nav {
-            height: 100%;
-            margin: 0;
-            @include caja-flex(space-between, center, wrap, row);
-            .navigation__element {
-                margin: 1em;
-                font-size: 1em;
-                a:hover {
-                    color: white;
-                    transition: all .8s ease;
-                }
-                .dropdown-menu .navigation__element a:hover{
-                    color: #12141D !important;
-                }
-            }
-         }
-    }
-
-//Header content
-.header__content {
-        min-height: 80vh;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 2em;
-        justify-content: center;
-        align-items: center;
-
-        .content__subtitle {
-            color: white;
-            font-weight: lighter;
-            font-size: 1.4em;
-        }
-
-        .content__textStatic {
-            color: #fff;
-            font-size: 3.75em;
-            font-weight: 400;
-        }
-
-        .content__textDynamic {
-            padding: 0;
-            height: 90px;
-            line-height: 90px;
-            overflow: hidden;
-            position:relative;
-            li {
-                color: $verdePrincipal;
-                font-size: 3.5em;
+            .content__textStatic {
+                color: #fff;
+                font-size: 3.75em;
                 font-weight: 400;
+            }
+
+            .content__textDynamic {
+                padding: 0;
+                height: 90px;
+                line-height: 90px;
+                overflow: hidden;
                 position: relative;
-                top: 0;
-                animation: slide 6s steps(4) infinite;
 
-                span {
+                li {
+                    color: $verdePrincipal;
+                    font-size: 3.5em;
+                    font-weight: 400;
                     position: relative;
+                    top: 0;
+                    animation: slide 6s steps(4) infinite;
+
+                    span {
+                        position: relative;
+                    }
+
+                    span::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        background-color: #12141d;
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23363636' fill-opacity='0.94' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+                        border-left: 4px solid #d3d3d3;
+                        animation: typing 1.5s steps(12) infinite;
+                    }
                 }
 
-                span::after {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    height: 100%;
-                    width: 100%;
-                    background-color: #12141D;
-                    border-left: 4px solid #d3d3d3;
-                    animation: typing 1.5s steps(12) infinite;
+                @keyframes slide {
+                    100% {
+                        top: -360px;
+                    }
                 }
-            }
-            @keyframes slide {
-                100% {
-                    top: -360px;
+
+                @keyframes typing {
+                    100% {
+                        left: 100%;
+                        margin: 0 -35px 0 35px;
+                    }
                 }
             }
 
-            @keyframes typing {
-                100% {
-                    left: 100%;
-                    margin: 0 -35px 0 35px;
-                }
+            .content__parrafo {
+                font-size: 1em;
+                color: white;
+                font-size: 400;
+            }
+
+            .inner__content--right {
+                display: flex;
+                justify-content: center;
             }
         }
-        .content__parrafo {
-            font-size: 1em;
-            color: white;
-            font-size: 400;
+
+        .button {
+            z-index: 0;
         }
-        .inner__content--right{
+
+        .hero__bottom {
+            height: 100%;
             display: flex;
-            justify-content: center;
-        }
-    }
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -2em;
 
-    .button{
-        z-index: 0;
-    }
-
-    .header__bottom{
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: -2em;
             .social__group {
                 padding: 0;
                 margin: 0;
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-end;
-                .social__element{
+
+                .social__element {
                     margin-right: 1em;
                 }
+
                 .social__element a {
                     color: #fff;
                 }
-                .social__element a:hover{
+
+                .social__element a:hover {
                     color: $verdePrincipal;
                     transition: .1s all ease-in-out;
                 }
             }
+        }
     }
-}
+
+    .dropdown-menu {
+        background: $backgroundSecundario;
+    }

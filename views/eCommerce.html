@@ -17,42 +17,48 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="../css/styles.css">
-    <title>BlackBox Desarrollo web</title>
+    <title>Black Brand - Tiendas online</title>
 </head>
 
 <body>
-    <header class="header contenedor">
-        <nav class="header__nav">
-            <div class="logo__nav">
-                <a href="/index.html">BlackBox</a>
-            </div>
-            <div class="boton__nav">
-                <div class="boton__navLines">
+    <header>
+        <nav class="navBar">
+            <div class="navBar__content contenedor">
+                <div class="logo"><a href="#">Black Brand</a></div>
+                <ul class="menu__list">
+                    <div class="icon cancel__boton">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li class="menu__item"><a href="/">Home</a></li>
+                    <li class="menu__item dropdown"><a href="" class="dropdown-toggle" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="menu__item"><a href="/views/disenoWeb.html">Desarrollo Web</a></li>
+                            <li class="menu__item"><a href="/views/eCommerce.html">E-Commerce</a></li>
+                            <li class="menu__item"><a href="/views/desarrolloApp.html">Desarrollo de Apps</a></li>
+                            <li class="menu__item"><a href="/views/sem.html">SEM</a></li>
+                            <li class="menu__item"><a href="/views/marketing.html">Marketing Digital</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="/views/404.html">Portfolio</a></li>
+                    <li class="menu__item"><a href="#testimonial">Testimonios</a></li>
+                    <li class="menu__item"><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="icon menu__boton">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
-            <ul class="navigation__nav">
-                <li class="navigation__element"><a href="/">Home</a></li>
-                <li class="dropdown navigation__element"><a href="#" class="dropdown-toggle"
-                        data-bs-toggle="dropdown" role="button">Servicios</a>
-                    <ul class="dropdown-menu">
-                        <li class="navigation__element"><a href="/views/disenoWeb.html">HTML/CSS</a></li>
-                        <li class="navigation__element"><a href="#">ECommerce</a></li>
-                        <li class="navigation__element"><a href="/views/desarrolloApp.html">React js</a></li>
-                        <li class="navigation__element"><a href="/views/sem.html">SEM</a></li>
-                        <li class="navigation__element"><a href="/views/marketing.html">Marketing</a></li>
-                    </ul>
-                </li>
-                <li class="navigation__element"><a href="#testimonial">Testimonios</a></li>
-                <li class="navigation__element"><a href="#Nosotros">Nosotros</a></li>
-                <li class="navigation__element"><a href="#Contacto">Contacto</a></li>
-            </ul>
         </nav>
-        <div class="header__content">
+    </header>
+    <!---->
+    <section class="hero contenedor">
+        <div class="hero__content">
             <div class="inner__content">
                 <div class="content__textStatic" style="font-weight: 600;">ECommerce</div>
                 <h5 class="content__parrafo"><strong>Diseñamos y desarrollamos tu tienda online.</strong>
                 </h5>
-                <h5 class="content__parrafo" style="font-weight: lighter;">Para administrar productos, stock, cupones de descuentos, carga masiva de productos y reportes</h5>
+                <h5 class="content__parrafo" style="font-weight: lighter;">Para administrar productos, stock, cupones de
+                    descuentos, carga masiva de productos y reportes</h5>
                 <button class="mt-4 button button--principal">Solicitar cotización</button>
                 <div class="apoyo mt-4">
                     <h2 class="content__parrafo mt-2 mb-4"> <span></span> Nos apoyamos en</h5>
@@ -79,11 +85,10 @@
                 </div>
             </div>
             <div class="inner__content--right">
-                <img src="/assets/images/ecommerce-bg.png" alt="imagen-desarrollo-web"
-                    class="image__content">
+                <img src="/assets/images/ecommerce-bg.png" alt="imagen-desarrollo-web" class="image__content">
             </div>
         </div>
-        <div class="header__bottom">
+        <div class="hero__bottom">
             <div class="m-4"></div>
             <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_7udbsx97.json"
                 background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay
@@ -94,22 +99,26 @@
                 <li class="social__element"><a href=""><i class="fab fa-instagram"></i></a></li>
             </ul>
         </div>
-    </header>
+    </section>
+    <!---->
     <section class="desarrollo contenedor mt-4">
         <div class="titulo__desarrollo">
             <h2>Acerca del servicio</h2>
         </div>
         <div class="desarrollo__box mt-4 mb-4">
-            <p>Creamos diseños atractivos y experiencias memorables para aumentar tus ventas en la web. Implementamos sistemas para administrar productos, 
-                manejar stock y gestionar cupones de descuentos, carga masiva de productos, reportes de ventas, productos y usuarios, entre otras características.
-                Proveemos una amplia variedad de estrategias de marketing para posicionar tu E-Commerce y productos en Internet.
+            <p>Creamos diseños atractivos y experiencias memorables para aumentar tus ventas en la web. Implementamos
+                sistemas para administrar productos,
+                manejar stock y gestionar cupones de descuentos, carga masiva de productos, reportes de ventas,
+                productos y usuarios, entre otras características.
+                Proveemos una amplia variedad de estrategias de marketing para posicionar tu E-Commerce y productos en
+                Internet.
             </p>
         </div>
         <div class="titulo__desarrollo mt-4 mb-4">
             <h2>Plan de trabajo</h2>
         </div>
         <div class="gs:grid servicios__grupo">
-            <div class="sm:columna-3 md:columna-12 mt-4">
+            <div class="sm:columna-4 md:columna-12 mt-4">
                 <div class="inner__servicio">
                     <img src="/assets/images/icon-inmersion-01.svg" alt="">
                     <h2 class="titulo">Inmersión</h2>
@@ -117,7 +126,7 @@
                         entender las necesidades del cliente y los usuarios, alinear objetivos y expectativas.</p>
                 </div>
             </div>
-            <div class="sm:columna-3 md:columna-12">
+            <div class="sm:columna-4 md:columna-12">
                 <div class="inner__servicio">
                     <img src="/assets/images/icon-estrategia-dark-01.svg"">
                         <h2 class=" titulo">Estrategia</h2>
@@ -127,7 +136,7 @@
             </div>
         </div>
         <div class="gs:grid servicios__grupo">
-            <div class="sm:columna-3 md:columna-12">
+            <div class="sm:columna-4 md:columna-12">
                 <div class="inner__servicio">
                     <img src="/assets/images/icon-implementacion-dark-01.svg" alt="">
                     <h2 class="titulo">Implementación</h2>
@@ -135,7 +144,7 @@
                         desarrollo, generación de contenido, nos preparamos para salir a la cancha.</p>
                 </div>
             </div>
-            <div class="sm:columna-3 md:columna-12">
+            <div class="sm:columna-4 md:columna-12">
                 <div class="inner__servicio">
                     <img src="/assets/images/icon-analisis-01.svg"">
                         <h2 class=" titulo">Análisis</h2>
@@ -157,9 +166,10 @@
                     <div class="servicio__icono">
                         <img src="/assets/images/icon-studio.svg"">
                     </div>
-                    <div class="servicios__texto">
+                    <div class=" servicios__texto">
                         <h2 class=" titulo">Estudio de mercado</h2>
-                        <p>Identificamos y analizamos los actores principales de tu mercado con el fin de contribuir a desarrollar una estrategia más competente.</p>
+                        <p>Identificamos y analizamos los actores principales de tu mercado con el fin de contribuir a
+                            desarrollar una estrategia más competente.</p>
                     </div>
                 </div>
             </div>
@@ -168,9 +178,10 @@
                     <div class="servicio__icono">
                         <img src="/assets/images/uxui.svg"">
                     </div>
-                    <div class="servicios__texto">
+                    <div class=" servicios__texto">
                         <h2 class=" titulo">Diseño UI/UX</h2>
-                        <p>Creamos interfaces para tu app centradas en los usuarios objetivo para que sean completamente intuitivas y atractivas.</p>
+                        <p>Creamos interfaces para tu app centradas en los usuarios objetivo para que sean completamente
+                            intuitivas y atractivas.</p>
                     </div>
                 </div>
             </div>
@@ -181,9 +192,10 @@
                     <div class="servicio__icono">
                         <img src="/assets/images/icon-responsive.svg"">
                     </div>
-                    <div class="servicios__texto">
+                    <div class=" servicios__texto">
                         <h2 class=" titulo">Responsive Design</h2>
-                        <p>Construímos nuestros sitios web de forma Responsive o Mobile-First según cada proyecto, para que se adapte a todos los dispositivos del mercado.</p>
+                        <p>Construímos nuestros sitios web de forma Responsive o Mobile-First según cada proyecto, para
+                            que se adapte a todos los dispositivos del mercado.</p>
                     </div>
                 </div>
             </div>
@@ -192,9 +204,10 @@
                     <div class="servicio__icono">
                         <img src="/assets/images/icon-desarrollo.svg"">
                     </div>
-                    <div class="servicios__texto">
+                    <div class=" servicios__texto">
                         <h2 class=" titulo">Desarrollo Front y Back-End</h2>
-                        <p>Cada proyecto es distinto, por eso cada uno se desarrolla a medida según los requerimientos del proyecto y la necesidad de los usuarios.</p>
+                        <p>Cada proyecto es distinto, por eso cada uno se desarrolla a medida según los requerimientos
+                            del proyecto y la necesidad de los usuarios.</p>
                     </div>
                 </div>
             </div>
@@ -205,9 +218,10 @@
                     <div class="servicio__icono">
                         <img src="/assets/images/icon-pagos.svg"">
                     </div>
-                    <div class="servicios__texto">
+                    <div class=" servicios__texto">
                         <h2 class=" titulo">Plataformas de Pago</h2>
-                        <p>Implementamos todos las plataformas de pago: Paypal, Mercado Pago, Todo Pago, Western Union, Stripe, entre otras.</p>
+                        <p>Implementamos todos las plataformas de pago: Paypal, Mercado Pago, Todo Pago, Western Union,
+                            Stripe, entre otras.</p>
                     </div>
                 </div>
             </div>
@@ -216,9 +230,11 @@
                     <div class="servicio__icono">
                         <img src="/assets/images/icon-estadisticas.svg"">
                     </div>
-                    <div class="servicios__texto">
+                    <div class=" servicios__texto">
                         <h2 class=" titulo">Estadísticas de Ventas y Productos</h2>
-                        <p>Es imprescindible saber con exactitud qué pasa en tu Tienda Online para poder tomar decisiones acertadas: cómo evolucionan las ventas, la tasa de conversión, la facturación, etc.</p>
+                        <p>Es imprescindible saber con exactitud qué pasa en tu Tienda Online para poder tomar
+                            decisiones acertadas: cómo evolucionan las ventas, la tasa de conversión, la facturación,
+                            etc.</p>
                     </div>
                 </div>
             </div>
@@ -232,71 +248,90 @@
         </div>
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                   ¿Son auto-administrables?   
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    ¡Por supuesto! Todos nuestros sitios son auto-administrables. ¿Qué quiere decir? que, mediante usuario y contraseña, puedes acceder a un Panel de Administración de tu sitio web y editar todos los contenidos como textos, imágenes, datos de la empresa, etc.
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Son auto-administrables?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        ¡Por supuesto! Todos nuestros sitios son auto-administrables. ¿Qué quiere decir? que, mediante
+                        usuario y contraseña, puedes acceder a un Panel de Administración de tu sitio web y editar todos
+                        los contenidos como textos, imágenes, datos de la empresa, etc.
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    ¿Cuánto demoran en hacer un Ecommerce?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    Sinceramente no hay un tiempo estipulado, cada proyecto es diferente. Por eso contactanos para contarnos un poco más y poder estimar un tiempo de desarrollo.
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Cuánto demoran en hacer un Ecommerce?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Sinceramente no hay un tiempo estipulado, cada proyecto es diferente. Por eso contactanos para
+                        contarnos un poco más y poder estimar un tiempo de desarrollo.
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    ¿Se adaptan a todas las pantallas/dispositivos?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    Si. Todos nuestros desarrollos son Responsive o Mobile-First, para que se adapte a todos los dispositivos del mercado.
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Se adaptan a todas las pantallas/dispositivos?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Si. Todos nuestros desarrollos son Responsive o Mobile-First, para que se adapte a todos los
+                        dispositivos del mercado.
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingfour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    ¿Usan plantillas o son diseños personalizados?
-                </button>
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        ¿Usan plantillas o son diseños personalizados?
+                    </button>
                 </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Nosotros recomendamos hacer un sitio a medida, personalizado. No hay nada mejor que un buen diseño que se adapte perfectamente a tu marca y un desarrollo pensado y creado sólo para tu proyecto, con esto logramos un sitio liviano, de carga rápida, eficiente y escalable en el tiempo. Si bien las plantillas no son lo mas recomendables, en ciertos casos dependiendo del proyecto podemos optar por utilizar alguna.
+                        Nosotros recomendamos hacer un sitio a medida, personalizado. No hay nada mejor que un buen
+                        diseño que se adapte perfectamente a tu marca y un desarrollo pensado y creado sólo para tu
+                        proyecto, con esto logramos un sitio liviano, de carga rápida, eficiente y escalable en el
+                        tiempo. Si bien las plantillas no son lo mas recomendables, en ciertos casos dependiendo del
+                        proyecto podemos optar por utilizar alguna.
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingfive">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    ¿Se puede realizar carga masiva de productos?
-                </button>
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        ¿Se puede realizar carga masiva de productos?
+                    </button>
                 </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        ¡Si! Podes cargar tus productos con sus variaciones, precio, stock, etc. de forma masiva. Se realiza mediante un archivo de Excel y en cuestión de segundos tu Ecommerce estará actualizado.
+                        ¡Si! Podes cargar tus productos con sus variaciones, precio, stock, etc. de forma masiva. Se
+                        realiza mediante un archivo de Excel y en cuestión de segundos tu Ecommerce estará actualizado.
                     </div>
                 </div>
             </div>
-          </div>
-          <button class="mt-4 button button--principal">Quiero que me llamen</button>
+        </div>
+        <button class="mt-4 button button--principal">Quiero que me llamen</button>
     </section>
 
     <!--Footer-->
-    <footer id="footer" class="footer mt-4">
+    <footer id="footer" class="footer">
         <div class="gs:grid footer__contenido contenedor">
             <div class="sm:columna-3 md:columna-12">
                 <div class="footer__servicios">
@@ -317,7 +352,7 @@
                 </div>
             </div>
             <div class="sm:columna-3 md:columna-12">
-                <div class="footer__servicios">
+                <div class="footer__servicios ">
                     <h1 class="titulo titulo--footer">CONOCENOS</h1>
                     <ul>
                         <li class="navigation__element navigation__element--footer"><a href="">Inicio</a></li>
@@ -333,12 +368,12 @@
                 <div class="footer__servicios">
                     <h1 class="titulo titulo--footer">CONTACTO</h1>
                     <ul>
-                        <li class="navigation__element navigation__element--footer"><a href=""><strong>Tucumán,
-                                    Argentina</strong> </a></li>
-                        <li class="navigation__element navigation__element--footer"><a href="">+15 (3865) 441043</a>
+                        <li class="navigation__element navigation__element--footer"><strong>Tucumán, Argentina</strong>
+                        </li>
+                        <li class="navigation__element navigation__element--footer"><a href=""></a>+15 (3865) 441043</a>
                         </li>
                         <li class="navigation__element navigation__element--footer"><a
-                                href="">contacto@beagencia.com.ar</a></li>
+                                href="">hola@blackbrand.agency</a></li>
                     </ul>
                 </div>
             </div>
@@ -346,21 +381,20 @@
                 <div class="footer__servicios">
                     <h1 class="titulo titulo--footer">REDES SOCIALES</h1>
                     <ul class="footer__redes">
-                        <li class="social__element"><a href=""><i class="fab fa-twitter"></i> Twitter</a></li>
-                        <li class="social__element"><a href=""><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
-                        <li class="social__element"><a href=""><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li class="social__element"><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li class="social__element"><a href="#"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
+                        <li class="social__element"><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer__bottom">
             <div class="contenedor">
-                <div class="gs:grid content__footerBottom">
-                    <div class="sm:columna-6 md:columna-12">
-                        <span class="footer__derechos">Todos los derechos reservados a Be Agencia de diseño y contenido
-                            - 2020</span>
+                <div class="gs:grid content__footerBottom ">
+                    <div class="sm:columna-6 md:columna-12 footer__texto">
+                        <span class="footer__derechos">Todos los derechos reservados a Black Brand - 2020</span>
                     </div>
-                    <div class="sm:columna-6 md:columna-12 right">
+                    <div class="sm:columna-6 md:columna-12 footer__boton">
                         <button class="button button--principal">¡Suscribite al Newsletter!</button>
                     </div>
                 </div>

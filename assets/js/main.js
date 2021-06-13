@@ -23,12 +23,18 @@ $(function() {
 })
 
 /*Menu*/
-
-const menuBtn = document.querySelector('.boton__nav');
-const menuList = document.querySelector('.navigation__nav');
-/* Menu toggle */
-
-menuBtn.addEventListener("click", () => {
-    menuBtn.classList.toggle("open");
-    menuList.classList.toggle("open");
-});
+const body = document.querySelector("body");
+const navbar = document.querySelector(".navBar");
+const menu = document.querySelector(".menu__list");
+const menuBtn = document.querySelector(".menu__boton");
+const cancelBtn = document.querySelector(".cancel__boton");
+menuBtn.onclick = () => {
+    menu.classList.add("active");
+    menuBtn.classList.add("hide");
+    body.classList.add("disabledScroll");
+}
+cancelBtn.onclick = () => {
+    menu.classList.remove("active");
+    menuBtn.classList.remove("hide");
+    body.classList.remove("disabledScroll");
+}

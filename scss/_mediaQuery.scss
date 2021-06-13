@@ -1,54 +1,89 @@
 //Responsive
 
-@media screen and (min-width: 578px){
+@media screen and (min-width: 578px) {
     @include grid-system(sm\:columna);
-    .header__content{
+
+    .hero__content {
         height: auto;
     }
-    
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 770px) {
 
     @include grid-system(md\:columna);
 
     /*Configuracion body*/
-    body{
+    body {
         font-size: 14px;
     }
-    /*Menu*/
-    .boton__nav{
-        display:flex !important;
+
+    body.disabledScroll {
+        overflow: hidden !important;
     }
 
-    .navigation__nav{
-        width: 100%;
-        flex-direction: column !important;
-        justify-content: space-around !important;
-        position: absolute !important;
-        top: 0;
-        right: 0;
-        left: 0;
-        height: 100vh;
-        transform: translateY(-100vh);
-        background-color: $backgroundSecundario;
-        z-index: 1;
-    }
-
-    .navigation__nav.open{
-        transform: translateY(0);
-    }
-
-    /*header menu*/
-    .header__content{
+    .hero__content {
         height: auto;
     }
-    
+
+    .inner__content--right {
+        display: none !important;
+    }
+
+    /*Menu*/
+    .navBar .menu__list {
+        position: fixed !important;
+        top: 0;
+        left: -100%;
+        height: 100vh !important;
+        width: 100%;
+        background-color: #12141D;
+        display: block !important;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .navBar .menu__list.active {
+        left: 0%;
+    }
+
+    .navBar .menu__list .menu__item {
+        margin-top: 45px !important;
+        margin-bottom: 45px !important;
+        padding: 0 2em;
+    }
+
+    .navBar .menu__list li a {
+        font-size: 1.5em;
+    }
+
+    .icon {
+        display: block !important;
+    }
+
+    .icon.hide {
+        display: none !important;
+    }
+
+
+    /*header menu*/
+    .header__content {
+        height: auto;
+        margin-top: 6em;
+    }
+
+    .hero__content{
+        .content__textStatic{
+        font-size: 2.5em !important;
+    }
+    }
+
     /*Configuracion banner*/
-    .banner__content--left{
+    .banner__content--left {
         text-align: center !important;
     }
-    .banner__content--right{
+
+    .banner__content--right {
         margin-top: -2em;
         text-align: center !important;
     }
@@ -57,13 +92,31 @@
         margin-top: 2em;
         width: 30px !important;
     }
- 
-    .footer{
-        text-align: center;
-        .right{
+
+    .footer {
+        .footer__servicios {
+            text-align: center;
+
+            h1 {
+                font-size: 1.4em !important;
+                font-weight: bold;
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+        }
+
+        .navigation__element--footer {
+            font-size: 1em !important;
+        }
+
+        .footer__redes {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .content__footerBottom {
             text-align: center !important;
-            padding-bottom: 1em;
         }
     }
-    
+
 }

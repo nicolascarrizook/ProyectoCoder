@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Somos una agencia de diseño web y marketing digital, enfocados en apoyar a emprendedores o empresas que desean tener una presencia online.">   
-    <meta name="keywords" content="diseño web, marketing, marketing digital, agencia digital, comunicacion, multimedia, desarrollo web, desarrollo de aplicaciones, html, css, photoshop, react">
+    <meta name="description"
+        content="Somos una agencia de diseño web y marketing digital, enfocados en apoyar a emprendedores o empresas que desean tener una presencia online.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Error 404</title>
+    <title>Black Brand - Página inexistente</title>
 </head>
+
 <body>
-    <header class="header contenedor">
-        <nav class="header__nav">
-            <div class="logo__nav">
-                <a href="/">Be</a>
+    <header>
+        <nav class="navBar">
+            <div class="navBar__content contenedor">
+                <div class="logo"><a href="#">Black Brand</a></div>
+                <ul class="menu__list">
+                    <div class="icon cancel__boton">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li class="menu__item"><a href="/">Home</a></li>
+                    <li class="menu__item dropdown"><a href="" class="dropdown-toggle" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="menu__item"><a href="/views/disenoWeb.html">Desarrollo Web</a></li>
+                            <li class="menu__item"><a href="/views/eCommerce.html">E-Commerce</a></li>
+                            <li class="menu__item"><a href="/views/desarrolloApp.html">Desarrollo de Apps</a></li>
+                            <li class="menu__item"><a href="/views/sem.html">SEM</a></li>
+                            <li class="menu__item"><a href="/views/marketing.html">Marketing Digital</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a href="/views/404.html">Portfolio</a></li>
+                    <li class="menu__item"><a href="#testimonial">Testimonios</a></li>
+                    <li class="menu__item"><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="icon menu__boton">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-            <ul class="navigation__nav">
-                <li class="navigation__element"><a href="#">Home</a></li>
-                <li class="dropdown navigation__element"><a href="#Servicios" class="dropdown-toggle" data-bs-toggle="dropdown" role="button">Servicios</a>
-                    <ul class="dropdown-menu">
-                        <li class="navigation__element"><a href="/views/disenoWeb.html">HTML/CSS</a></li>
-                        <li class="navigation__element"><a href="">ECommerce</a></li>
-                        <li class="navigation__element"><a href="">React js</a></li>
-                        <li class="navigation__element"><a href="">SEM</a></li>
-                        <li class="navigation__element"><a href="">Marketing</a></li>
-                    </ul>
-                </li>
-                <li class="navigation__element"><a href="/">Testimonios</a></li>
-                <li class="navigation__element"><a href="/">Nosotros</a></li>
-                <li class="navigation__element"><a href="/">Contacto</a></li>
-            </ul>
         </nav>
-        <div class="header__content">
+    </header>
+    <section class="hero contenedor">
+        <div class="hero__content">
             <div class="inner__content">
-                <div class="content__subtitle">Ups, al parecer esta sección se encuentra deshabilitada o no existe.</div>
+                <div class="content__subtitle">Ups, al parecer esta sección se encuentra deshabilitada o no existe.
+                </div>
                 <div class="content__textStatic">404 NOT FOUND</div>
                 <h5 class="content__parrafo"><strong>Tal vez quieras ver nuestros trabajos</strong></h5>
                 <a class="mt-4 button button--principal" href="/">Volver al sitio</a>
@@ -46,9 +60,72 @@
             <div class="inner__content--right">
             </div>
         </div>
-    </header>
+    </section>
+    <!--Footer-->
+    <footer id="footer" class="footer">
+        <div class="gs:grid footer__contenido contenedor">
+            <div class="sm:columna-3 md:columna-12">
+                <div class="footer__servicios">
+                    <h1 class="titulo titulo--footer">TE AYUDAMOS CON</h1>
+                    <ul>
+                        <li class="navigation__element navigation__element--footer"><a href="">Diseño y desarrollo web</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Desarrollo de Apps</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Tiendas online</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Marketing digital</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Posicionamiento online</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Contenidos multimedia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sm:columna-3 md:columna-12" >
+                <div class="footer__servicios ">
+                    <h1 class="titulo titulo--footer">CONOCENOS</h1>
+                    <ul>
+                        <li class="navigation__element navigation__element--footer"><a href="">Inicio</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Servicios</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Testimonios</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Casos de estudio</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Contacto</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">Cotizar proyecto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sm:columna-3 md:columna-12">
+                <div class="footer__servicios">
+                    <h1 class="titulo titulo--footer">CONTACTO</h1>
+                    <ul>
+                        <li class="navigation__element navigation__element--footer"><strong>Tucumán, Argentina</strong></li>
+                        <li class="navigation__element navigation__element--footer"><a href=""></a>+15 (3865) 441043</a></li>
+                        <li class="navigation__element navigation__element--footer"><a href="">hola@blackbrand.agency</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sm:columna-3 md:columna-12">
+                <div class="footer__servicios">
+                    <h1 class="titulo titulo--footer">REDES SOCIALES</h1>
+                    <ul class="footer__redes">
+                         <li class="social__element"><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                         <li class="social__element"><a href="#"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
+                         <li class="social__element"><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="contenedor">
+                <div class="gs:grid content__footerBottom ">
+                    <div class="sm:columna-6 md:columna-12 footer__texto">
+                        <span class="footer__derechos">Todos los derechos reservados a Black Brand - 2020</span>
+                    </div>
+                    <div class="sm:columna-6 md:columna-12 footer__boton" >
+                        <button class="button button--principal">¡Suscribite al Newsletter!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-     <!--JQUERY-->
+    <!--JQUERY-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--CDN lotties-->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -56,4 +133,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
