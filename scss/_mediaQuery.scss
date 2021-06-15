@@ -104,14 +104,20 @@
 
     .footer {
         .footer__servicios {
-            text-align: center;
-
+            text-align: left !important;
             h1 {
-                font-size: 1.4em !important;
+                font-size: 1em !important;
                 font-weight: bold;
                 margin-top: 1em;
                 margin-bottom: 1em;
             }
+        }
+        .footer__servicios--conocenos{
+            margin-left: 3em;
+        }
+
+        .footer__servicios--contacto{
+            text-align: center !important;
         }
 
         .navigation__element--footer {
