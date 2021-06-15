@@ -664,6 +664,11 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
     padding: 0 2em; }
   .navBar .menu__list li a {
     font-size: 1.5em; }
+  .dropdown-menu {
+    font-size: .7em;
+    padding: 0; }
+  .navBar .navBar__content .menu__list .menu__item {
+    margin: 0; }
   .icon {
     display: block !important; }
   .icon.hide {
