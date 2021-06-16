@@ -16,17 +16,17 @@
         width: 100%;
     }
     .slider__content{
-        text-align: center;
+        text-align: left;
         padding: 40px;
         color: white;
         border-radius: 25px;
         background-color: $backgroundSecundario;
-        border: .5px solid rgba(255, 255, 255, 0.124);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         h2{
             margin-top: 1em;
             font-size: 1.3em;
+            font-weight: bold;
         }
         p{
             font-size: 1em;
@@ -35,6 +35,14 @@
     }
     .socials{
         margin-top: 30px;
+        a{
+            color: white;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+        a:hover{
+            color: $verdePrincipal;
+        }
     }
 
     .socials i{

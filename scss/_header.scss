@@ -37,6 +37,13 @@
    
 
     .hero {
+
+        .inner__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
         //Hero content
         .hero__content {
             position: relative;
@@ -52,63 +59,21 @@
                 font-weight: lighter;
                 font-size: 1.4em;
             }
-
-            .content__textStatic {
-                color: #fff;
-                font-size: 3.75em;
-                font-weight: 400;
-            }
-
-            .content__textDynamic {
-                padding: 0;
-                height: 90px;
-                line-height: 90px;
-                overflow: hidden;
-                position: relative;
-
-                li {
-                    color: $verdePrincipal;
-                    font-size: 3.5em;
-                    font-weight: 400;
-                    position: relative;
-                    top: 0;
-                    animation: slide 6s steps(4) infinite;
-
-                    span {
-                        position: relative;
-                    }
-
-                    span::after {
-                        content: "";
-                        position: absolute;
-                        left: 0;
-                        height: 100%;
-                        width: 100%;
-                        background-color: #12141d;
-                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23363636' fill-opacity='0.94' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-                        border-left: 4px solid #d3d3d3;
-                        animation: typing 1.5s steps(12) infinite;
-                    }
-                }
-
-                @keyframes slide {
-                    100% {
-                        top: -360px;
-                    }
-                }
-
-                @keyframes typing {
-                    100% {
-                        left: 100%;
-                        margin: 0 -35px 0 35px;
-                    }
-                }
+            
+            .type{
+                color: $verdePrincipal;
+                font-size: 4em;
             }
 
             .content__parrafo {
-                font-size: 1em;
+                font-size: 1.1em;
                 color: white;
-                font-size: 400;
+                font-size: 300;
+            }
+
+            .inner__content--left {
+                height: 100%;
+                @include caja-flex(center, flex-start, wrap, column);
             }
 
             .inner__content--right {

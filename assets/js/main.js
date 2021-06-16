@@ -38,3 +38,15 @@ cancelBtn.onclick = () => {
     menuBtn.classList.remove("hide");
     body.classList.remove("disabledScroll");
 }
+
+
+var typed = new Typed('.type', {
+    strings: ['Diseño Web', 'Desarrollo de app', 'Tiendas online', 'Redes Sociales', 'Marketing'],
+    typeSpeed: 60,
+    backSpeed: 60,
+    loop: true,
+});
+
+
+//
+

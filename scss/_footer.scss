@@ -1,45 +1,54 @@
-//Footer
-
 .footer{
-    padding-top: 5em;
-    ul{
-        padding: 0;
-    }
-    .footer__contenido{
-        height: 100%;
-        @include caja-flex(space-around, none, wrap, row);
-        .titulo--footer{
-            color: white;
-        }
-        .navigation__element--footer{
-            font-size: .8em;
-            margin-top: .8em;
-            color: rgb(206, 203, 203);
-            font-weight: lighter;
-        }
-        a:hover {
-            color: white;
-            transition: all .8s ease;
-        }
-    }
-    .footer__bottom{
-        margin-top: 1em;
-        background: $backgroundSecundario;
-    }
-    .content__footerBottom{
-        height: 20vh;
-        width: 100%;
-        @include caja-flex(space-between, center, wrap, row);
-        .footer__boton{
-            text-align: center;
-        }
-    }
-    .right{
-        text-align: right;
-    }
-    .footer__derechos{
-        font-size: .8em;
+    margin-top: 4em;
+    border-top: 1px solid rgba(232, 232, 232, 0.083);
+    box-shadow: rgba(232, 232, 232, 0.083);
+    .titulo__footer{
+        text-align: center;
         color: white;
-        font-weight: lighter;
+        padding: 1.8em;
+        h1{
+            font-weight: bold;
+        }
+    }
+    .footer__content{
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        color: white;
+        h5{
+            font-weight: bold;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.241);
+        }
+        ul{
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            transition: all .3s ease;
+        }
+        a:hover{
+            color: $verdePrincipal;
+        }
+    }
+    .footer__content--left{
+        padding-right: 4em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .footer__content--right{
+        padding-left: 4em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        .social__group{
+            margin-top: 1em;
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+        }
     }
 }

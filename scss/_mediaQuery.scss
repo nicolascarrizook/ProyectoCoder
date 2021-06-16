@@ -36,7 +36,7 @@
         left: -100%;
         height: 100vh !important;
         width: 100%;
-        background-color: #12141D;
+        background-color: $background;
         display: block !important;
         padding: 40px 0;
         text-align: center;
@@ -81,6 +81,10 @@
         margin-top: 6em;
     }
 
+    .type{
+        font-size: 2.5em !important;
+    }
+
     .hero__content{
         .content__textStatic{
         font-size: 2.5em !important;
@@ -89,12 +93,12 @@
 
     /*Configuracion banner*/
     .banner__content--left {
-        text-align: center !important;
+        text-align: left !important;
     }
 
     .banner__content--right {
         margin-top: -2em;
-        text-align: center !important;
+        text-align: left !important;
     }
 
     .recursos .recursos__inner .recurso__image {
@@ -102,36 +106,12 @@
         width: 30px !important;
     }
 
-    .footer {
-        .footer__servicios {
-            text-align: left !important;
-            h1 {
-                font-size: 1em !important;
-                font-weight: bold;
-                margin-top: 1em;
-                margin-bottom: 1em;
-            }
-        }
-        .footer__servicios--conocenos{
-            margin-left: 3em;
-        }
-
-        .footer__servicios--contacto{
-            text-align: center !important;
-        }
-
-        .navigation__element--footer {
-            font-size: 1em !important;
-        }
-
-        .footer__redes {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .content__footerBottom {
-            text-align: center !important;
-        }
+    /*Footer*/
+    .footer__content--left{
+        display: none !important;
     }
-
+    .footer__content--right{
+        display: none !important;
+    }
+    
 }
