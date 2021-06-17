@@ -1,54 +1,73 @@
-.footer{
+.footer {
     margin-top: 4em;
     border-top: 1px solid rgba(232, 232, 232, 0.083);
     box-shadow: rgba(232, 232, 232, 0.083);
-    .titulo__footer{
-        text-align: center;
-        color: white;
-        padding: 1.8em;
-        h1{
-            font-weight: bold;
-        }
-    }
-    .footer__content{
+
+    .footer__box {
         height: 100%;
-        display: flex;
+
+        .footer__content {
+            margin-top: 3em;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            .footer__titulo {
+                color: $verdePrincipal;
+                font-weight: bold;
+                margin-bottom: 1em;
+            }
+
+            .menu__list {
+                a {
+                    color: rgb(145, 145, 145);
+                    font-weight: lighter;
+                    transition: all .3s ease;
+                }
+
+                a:hover {
+                    color: white;
+                }
+
+                li {
+                    color: rgb(189, 189, 189);
+                }
+
+                .fas {
+                    color: $verdePrincipal;
+                    margin-right: 1em;
+                }
+            }
+        }
+    }
+    .footer__bottom{
+        margin-top: 3em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
         justify-content: space-around;
-        align-items: flex-start;
-        color: white;
-        h5{
-            font-weight: bold;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.241);
-        }
-        ul{
-            padding: 0;
-        }
-        a{
-            text-decoration: none;
-            color: white;
-            transition: all .3s ease;
-        }
-        a:hover{
-            color: $verdePrincipal;
-        }
-    }
-    .footer__content--left{
-        padding-right: 4em;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .footer__content--right{
-        padding-left: 4em;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
         align-items: center;
-        .social__group{
-            margin-top: 1em;
-            width: 80%;
-            display: flex;
-            justify-content: space-around;
+        .footer__derechos{
+            color: white;
+            .derechos__texto{
+                font-size: .8em;
+                font-weight: 600;
+            }
+        }
+        .footer__redes{
+            .social__group{
+                display: flex;
+                justify-content: flex-end;
+                .social__element{
+                    margin: 1em;
+                }
+            }
         }
     }
 }

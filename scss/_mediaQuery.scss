@@ -107,11 +107,16 @@
     }
 
     /*Footer*/
-    .footer__content--left{
-        display: none !important;
+
+    .footer .footer__box .footer__content{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        .footer__titulo{
+            font-size: .9em;
+        }
     }
-    .footer__content--right{
-        display: none !important;
+
+    .footer__derechos{
+        text-align: center;
     }
-    
+
 }
