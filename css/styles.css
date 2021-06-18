@@ -78,6 +78,13 @@ img {
   font-size: 1rem !important;
   color: #fff; }
 
+.breadcrumb a {
+  color: white;
+  transition: all .5s ease; }
+
+.breadcrumb a:hover {
+  color: #3ccf91; }
+
 h2 span {
   width: 30px;
   height: 2px;
@@ -311,7 +318,10 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
       align-items: center;
       color: #fff;
       font-weight: bold;
-      margin-bottom: 1em; }
+      margin-bottom: 1em;
+      box-shadow: 0px 0px 14px 2px #3c4152;
+      -webkit-box-shadow: 0px 0px 14px 2px #3c4152;
+      -moz-box-shadow: 0px 0px 14px 2px #3c4152; }
     .servicios .grid .icono--2 {
       background-color: #4e30b7; }
     .servicios .grid .icono--3 {
@@ -485,6 +495,52 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
         margin: 1em; }
 
 /*Estilos diseno web*/
+/*Desarrollo web*/
+.hero__desarrolloWeb {
+  background: url("/assets/images/ico-html5-transparent.svg");
+  background-position: center;
+  background-size: 60vh;
+  background-repeat: no-repeat; }
+  .hero__desarrolloWeb .hero__title {
+    color: #3ccf91;
+    font-size: 2em; }
+
+.hero__ecommerce {
+  background: url("/assets/images/ico-shopify-transparent.svg");
+  background-position: center;
+  background-size: 60vh;
+  background-repeat: no-repeat; }
+  .hero__ecommerce .hero__title {
+    color: #3ccf91;
+    font-size: 2em; }
+
+.hero__desarrolloApp {
+  background-image: linear-gradient(0deg, #12141dec, #12141dec), url("/assets/images/reactbg.png");
+  background-position: center;
+  background-size: 70vh;
+  background-repeat: no-repeat; }
+  .hero__desarrolloApp .hero__title {
+    color: #3ccf91;
+    font-size: 2em; }
+
+.hero__sem {
+  background-image: linear-gradient(0deg, #12141dec, #12141dec), url("/assets/images/semrusbg.png");
+  background-position: center;
+  background-size: 70vh;
+  background-repeat: no-repeat; }
+  .hero__sem .hero__title {
+    color: #3ccf91;
+    font-size: 2em; }
+
+.hero__marketing {
+  background-image: linear-gradient(0deg, #12141dec, #12141dec), url("/assets/images/marketingbg2.png");
+  background-position: center;
+  background-size: 70vh;
+  background-repeat: no-repeat; }
+  .hero__marketing .hero__title {
+    color: #3ccf91;
+    font-size: 2em; }
+
 .titulo__desarrollo {
   text-align: center;
   color: white; }
@@ -674,8 +730,6 @@ input[type="radio"]:focus, input[type="checkbox"]:focus, input:focus, textarea:f
     height: auto;
     margin-top: 6em; }
   .type {
-    font-size: 2.5em !important; }
-  .hero__content .content__textStatic {
     font-size: 2.5em !important; }
   /*Configuracion banner*/
   .banner__content--left {

@@ -1,4 +1,60 @@
 /*Estilos diseno web*/
+/*Desarrollo web*/
+.hero__desarrolloWeb{
+    background: url('/assets/images/ico-html5-transparent.svg');
+    background-position: center;
+    background-size: 60vh;
+    background-repeat: no-repeat;
+    .hero__title{
+        color: $verdePrincipal;
+        font-size: 2em;
+    }
+}
+
+.hero__ecommerce{
+    background: url('/assets/images/ico-shopify-transparent.svg');
+    background-position: center;
+    background-size: 60vh;
+    background-repeat: no-repeat;;
+    .hero__title{
+        color: $verdePrincipal;
+        font-size: 2em;
+    }
+}
+
+.hero__desarrolloApp{
+    background-image:linear-gradient(0deg, #12141dec, #12141dec),  url('/assets/images/reactbg.png');
+    background-position: center;
+    background-size: 70vh;
+    background-repeat: no-repeat;;
+    .hero__title{
+        color: $verdePrincipal;
+        font-size: 2em;
+    }
+}
+
+.hero__sem{
+    background-image:linear-gradient(0deg, #12141dec, #12141dec),  url('/assets/images/semrusbg.png');
+    background-position: center;
+    background-size: 70vh;
+    background-repeat: no-repeat;;
+    .hero__title{
+        color: $verdePrincipal;
+        font-size: 2em;
+    }
+}
+
+.hero__marketing{
+    background-image:linear-gradient(0deg, #12141dec, #12141dec),  url('/assets/images/marketingbg2.png');
+    background-position: center;
+    background-size: 70vh;
+    background-repeat: no-repeat;;
+    .hero__title{
+        color: $verdePrincipal;
+        font-size: 2em;
+    }
+}
+
 .titulo__desarrollo{
     text-align: center;
     color: white;

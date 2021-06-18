@@ -106,6 +106,16 @@ img{
     color: $gris;
 }
 
+.breadcrumb{
+    a{
+        color: white;
+        transition: all .5s ease;
+    }
+    a:hover{
+        color: $verdePrincipal;
+    }
+}
+
 h2 span{
     width: 30px;
     height: 2px;
